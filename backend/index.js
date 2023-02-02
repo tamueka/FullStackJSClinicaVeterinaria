@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import conectarDB from "./config/db.js";
+import veterinarioRoutes from "./routes/veterinarioRoutes.js";
 
 const app = express();
 
@@ -10,9 +11,7 @@ dotenv.config();
 // Realizamos conexion con Base de Datos
 conectarDB();
 
-app.use("/", (req, res) => {
-  res.send("Hola Mundo");
-});
+app.use("/api/veterinarios", veterinarioRoutes);
 
 const PORT = process.env.PORT || 4000;
 

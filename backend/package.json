@@ -2,7 +2,7 @@
   "name": "apv-backend",
   "version": "1.0.0",
   "type": "module",
-  "description": "FullStackJS_Clinica_Veterinaria",
+  "description": "FullStackJS Clinica Veterinaria",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
