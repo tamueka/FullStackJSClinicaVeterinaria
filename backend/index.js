@@ -5,6 +5,9 @@ import veterinarioRoutes from "./routes/veterinarioRoutes.js";
 
 const app = express();
 
+// helper para el parseo de peticiones HTTP
+app.use(express.json());
+
 // Usamos variables de entorno
 dotenv.config();
 

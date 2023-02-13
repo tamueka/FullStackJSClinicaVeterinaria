@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const veterinarioSchema = mongoose.Schema({
-  npmbre: {
+  nombre: {
     type: String,
     required: true,
     trim: true,
@@ -14,11 +14,6 @@ const veterinarioSchema = mongoose.Schema({
     type: String,
     required: true,
     unique: true,
-    trim: true,
-  },
-  email: {
-    type: String,
-    default: null,
     trim: true,
   },
   web: {
