@@ -17,6 +17,11 @@ const pacientesSchema = mongoose.Schema(
     fecha: {
       type: Date,
       required: true,
+      default: Date.now(),
+    },
+    sintomas: {
+      type: String,
+      required: true,
     },
     veterinario: {
       type: mongoose.SchemaTypes.ObjectId,
@@ -24,7 +29,7 @@ const pacientesSchema = mongoose.Schema(
     },
   },
   {
-    timestamp: true,
+    timestamps: true,
   }
 );
 
